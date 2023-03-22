@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập buổi 3</title>
+</head>
+<body>
+    <h2>Câu 1: Bài tập về Iframe </h2>
+    <p><b>Yêu cầu:</b> Vào trang google map, tìm một địa điểm yêu thích và nhúng thẻ iframe của google map vào website. Để hiển thị được như sau:</p>
+    <p><b>Lưu ý:</b> Thử tự lên google tìm hiểu cách nhúng bản đồ vào website.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0977421299594!2d105.8523647!3d21.02877475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab953357c995%3A0x1babf6bb4f9a20e!2zSOG7kyBIb8OgbiBLaeG6v20!5e0!3m2!1svi!2s!4v1676798004118!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2>Câu 2: Bài tập về form</h2>
+    <p><b>Yêu cầu:</b> Tạo form <b>đăng ký</b> như form bên dưới. Phải có cả thẻ form bọc bên ngoài. Khi click vào thẻ label thì phải focus vào đúng ô input tương ứng với label đó. Các ô input phải yêu cầu nhập nội dung mới cho Đăng ký.</p>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method="POST">
+        <label for="hoTen">Họ tên: </label><br>
+        <input type="text" id="hoTen" placeholder="Ví dụ: levana" required><br>
+        <label for="email">Email: </label><br>
+        <input type="email" id="email" placeholder="Ví dụ: levana@gmail.com" required><br>
+        <label for="matKhau">Mật khẩu: </label><br>
+        <input type="password" id="matKhau" required><br>
+        <button>Đăng ký</button>
+    </form>
+    <p><b>Yêu cầu:</b> Tạo form <b>tìm kiếm</b> như dưới đây: (Phải có cả thẻ form bọc bên ngoài. Phải nhập nội dung mới cho bấm Tìm kiếm.)</p>
+    <form>
+        <input type="text" placeholder="Nhập nội dung tìm kiếm..." required>
+        <button>Tìm kiếm</button>
+    </form>
+    <h2>Câu 3: Bài tập để ôn lại kiến thức về form</h2>
+    <p><b>Yêu cầu:</b> Vẽ lại các thẻ dưới đây:</p>
+    <p><b>- Thẻ input:</b></p>
+    <form>
+        <label for="kieuText">Kiểu text:</label><br>
+        <input type="text" id="kieuText" placeholder="Nhập họ tên..."><br><br>
+        <label for="kieuEmail">Kiểu email:</label><br>
+        <input type="email" id="kieuEmail" placeholder="Nhập email"><br><br>
+        <label for="kieuPw">Kiểu password:</label><br>
+        <input type="password" id="kieuPw"><br><br>
+        <label for="kieuNumber">Kiểu number:</label><br>
+        <input type="number" id="kieuNumber" range><br><br>
+        <label for="kieuDate">Kiểu date:</label><br>
+        <input type="date" id="kieuDate"><br><br>
+        <label for="kieuTime">Kiểu time:</label><br>
+        <input type="time" id="kieuTime"><br><br>
+        <label for="kieuFile">Kiểu file:</label><br>
+        <input type="file" id="kieuFile"><br><br>
+        <label>Kiểu radio:</label><br>
+        <input type="radio" id="Nam" name="gioiTinh" value="Nam">
+        <label for="Nam">Nam</label><br>
+        <input type="radio" id="Nu" name="gioiTinh" value="Nữ">
+        <label for="Nu">Nữ</label><br>
+        <input type="radio" id="Khac" name="gioiTinh" value="Khác">
+        <label for="Khac">Khác</label><br><br>
+        <label>Kiểu range:</label><br>
+        <label>Âm lượng (min=0 và max=100):</label><br>
+        <input type="range" min="0" max="100" name="amLuong"><br><br>
+        <label>Kiểu color:</label><br>
+        <input type="color" name="color">
+    </form>
+    <p><b>- Thẻ select:</b></p>
+    <label>Chọn danh mục:</label><br>
+    <select>
+        <option>Quần</option>
+        <option>Áo</option>
+        <option>Mũ</option>
+        <option>Khăn</option>
+    </select>
+    <p><b>- Thẻ textarea (có cols=30 và rows=10):</b></p>
+    <textarea cols="30" rows="10"></textarea>
+</body>
+</html>
